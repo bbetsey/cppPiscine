@@ -1,5 +1,5 @@
 
-CPP Piscine » practical tasks for learning c++
+CPP Piscine : practical tasks for learning c++
 
 * cpp00 » learning the specifities of the language when compared to C
 * cpp01 » learning the memory allocation, reference, pointers to members
