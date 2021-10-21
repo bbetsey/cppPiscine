@@ -1,13 +1,11 @@
 #include <iostream>
-using namespace std;
-
 
 int	main(int argc, char **argv) 
 {
 	int		i = 1;
 	size_t	j;
-	string	str;
-	locale	loc;
+	std::string	str;
+	std::locale	loc;
 
 	if (argc > 1)
 	{
@@ -16,10 +14,10 @@ int	main(int argc, char **argv)
 			str = argv[i++];
 			j = 0;
 			while(j < str.length())
-				cout << toupper(str[j++], loc);
+				std::cout << toupper(str[j++], loc);
 		}
 	}
 	else
-		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 	return (0);
 }
