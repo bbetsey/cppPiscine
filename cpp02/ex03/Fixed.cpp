@@ -75,7 +75,7 @@ bool	Fixed::operator < ( const Fixed &src ) const {
 	return this->toFloat() < src.toFloat();
 }
 
-Fixed	Fixed::operator ++ ( void ) {
+Fixed	&Fixed::operator ++ ( void ) {
 	this->pointValue++;
 	return *this;
 }
@@ -87,7 +87,7 @@ Fixed	Fixed::operator ++ ( int ) {
 	return temp;
 }
 
-Fixed	Fixed::operator -- ( void ) {
+Fixed	&Fixed::operator -- ( void ) {
 	this->pointValue--;
 	return *this;
 }

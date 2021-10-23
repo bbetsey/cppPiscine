@@ -30,9 +30,9 @@ class Fixed {
 		bool operator >  ( const Fixed &src ) const;
 		bool operator <  ( const Fixed &src ) const;
 
-		Fixed operator ++ ( void );
+		Fixed &operator ++ ( void );
 		Fixed operator ++ ( int );
-		Fixed operator -- ( void );
+		Fixed &operator -- ( void );
 		Fixed operator -- ( int );
 
 		static const Fixed min( const Fixed &obj, const Fixed &obj2 );
