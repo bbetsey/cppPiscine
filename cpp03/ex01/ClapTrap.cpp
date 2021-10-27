@@ -67,6 +67,15 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 	std::cout << name << " new hitpoints: " << hitpoints << std::endl;
 }
 
+void	ClapTrap::performance( void ) {
+	std::cout << "------------------------------" << std::endl;
+	std::cout << "Name:\t\t" << name << std::endl;
+	std::cout << "Hitpoints:\t" << hitpoints << std::endl;
+	std::cout << "EnergyPoints:\t" << energyPoints << std::endl;
+	std::cout << "AttackDamage:\t" << attackDamage << std::endl;
+	std::cout << "------------------------------" << std::endl;
+}
+
 
 //MARK: - Class Methods { get }
 

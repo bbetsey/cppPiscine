@@ -20,8 +20,9 @@ class ClapTrap {
 		ClapTrap		&operator = ( const ClapTrap &src );
 
 		virtual void	attack( std::string const &target );
-		virtual void	takeDamage( unsigned int amount );
-		virtual void	beRepaired( unsigned int amount );
+		void			takeDamage( unsigned int amount );
+		void			beRepaired( unsigned int amount );
+		void			performance( void );
 
 		std::string		getName( void ) const;
 		int				getHitpoints( void ) const;

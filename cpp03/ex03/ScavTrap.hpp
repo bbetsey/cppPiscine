@@ -4,7 +4,12 @@
 # include <iostream>
 # include "ClapTrap.hpp"
 
-class ScavTrap: public ClapTrap {
+class ScavTrap: virtual public ClapTrap {
+	protected:
+		static const int	startHitpoints = 100;
+		static const int	startEnergyPoints = 50;
+		static const int	startAttackDamage = 20;
+
 	public:
 		ScavTrap( std::string name );
 		virtual ~ScavTrap( void );
@@ -12,10 +17,8 @@ class ScavTrap: public ClapTrap {
 
 		ScavTrap	&operator = ( const ScavTrap &src );
 
-		void	guardGate( void );
-		void	attack( std::string const &target );
-		void	takeDamage( unsigned int amount );
-		void	beRepaired( unsigned int amount );
+		virtual void	attack( std::string const &target );
+		void			guardGate( void );
 };
 
 #endif

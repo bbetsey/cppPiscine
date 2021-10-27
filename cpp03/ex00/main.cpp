@@ -7,6 +7,10 @@ int	main( void ) {
 	
 	c = a;
 
+	a.performance();
+	b.performance();
+	c.performance();
+
 	std::cout << std::endl;
 	c.attack( "Socrat" );
 	c.takeDamage( 2 );

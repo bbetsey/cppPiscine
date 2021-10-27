@@ -1,7 +1,7 @@
 NAME	= claptrap
-SRCS	= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRCS	= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 OBJS	= $(SRCS:.cpp=.o)
-INC		= -I ClapTrap.hpp -I ScavTrap.hpp -I FragTrap.hpp
+INC		= -I ClapTrap.hpp -I ScavTrap.hpp -I FragTrap.hpp -I DiamondTrap.hpp
 FLAGS	= -Wall -Wextra -Werror
 
 all: $(NAME)
